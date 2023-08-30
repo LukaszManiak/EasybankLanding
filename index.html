@@ -18,13 +18,13 @@
   <body class="bg-veryLightGray">
     <!-- navbar -->
     <nav
-      class="bg-white top-0 z-30 h-20 w-full md:px-16 px-6 py-6 flex items-center justify-between"
+      class="bg-white sticky top-0 z-30 h-20 w-full md:px-16 px-6 py-6 flex items-center justify-between"
     >
       <div>
         <a href="#"><img src="images/logo.svg" alt="" /></a>
       </div>
 
-      <ul class="flex space-x-4 justify-between">
+      <ul class="hidden lg:flex space-x-4 justify-between">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
@@ -33,7 +33,9 @@
       </ul>
 
       <div>
-        <button class="bg-limeGreen rounded-full px-4 py-2 text-white">
+        <button
+          class="hidden lg:block bg-limeGreen rounded-full px-4 py-2 text-white"
+        >
           Blog Request Invite
         </button>
       </div>
@@ -41,10 +43,20 @@
 
     <!-- hero section -->
     <section>
-      <div class="flex justify-center items-center p-6">
-        <div class="w-1/2 flex flex-col items-start gap-y-4">
-          <h1 class="text-6xl w-1/2">Next generation digital banking</h1>
-          <p class="text-lg w-2/4">
+      <div
+        class="flex flex-col-reverse justify-center items-center p-6 lg:flex-row"
+      >
+        <div
+          class="w-5/6 lg:w-1/2 items-center flex flex-col lg:items-start gap-y-4"
+        >
+          <h1
+            class="w-5/6 text-4xl text-center lg:text-left lg:text-6xl lg:w-1/2"
+          >
+            Next generation digital banking
+          </h1>
+          <p
+            class="w-5/6 text-base text-center lg:text-left lg:text-lg lg:w-2/4"
+          >
             Take your financial life online. Your Easybank account will be a
             one-stop-shop for spending, saving, budgeting, investing, and much
             more.
@@ -54,7 +66,11 @@
           </button>
         </div>
 
-        <img class="w-2/5" src="images/image-mockups.png" alt="" />
+        <img
+          class="w-3/4 z-10 relative md:-mt-48 -mt-32 lg:-mt-28 lg:w-2/5"
+          src="images/image-mockups.png"
+          alt=""
+        />
       </div>
     </section>
 
