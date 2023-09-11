@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.article:hover {
+  cursor: pointer;
+}
+.article:hover .article-title {
+  color: hsl(136, 65%, 51%);
+}
+.article-title {
+  transition: color 0.15s ease-in-out;
+}
