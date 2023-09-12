@@ -39,7 +39,7 @@ Users should be able to:
 - Frontend Mentor - [Lukasz Maniak](https://www.frontendmentor.io/profile/Mejniak)
 - GitHub- [Lukasz Maniak](https://github.com/Mejniak)
 
-### Screenshot
+### Screenshots
 
 <!--
 ![Screenshot 1](/screenshots/screen1.jpeg?raw=true 'Screenshot 1 (desktop)')

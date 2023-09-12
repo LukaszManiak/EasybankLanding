@@ -13,6 +13,8 @@ html,
 body {
   overflow-x: hidden;
 }
+
+/* Article hover effects */
 .article:hover {
   cursor: pointer;
 }
@@ -31,6 +33,7 @@ body {
   transition: fill 0.15s ease-in-out;
 }
 
+/* request button */
 .request-invite {
   background: linear-gradient(
     90deg,
@@ -43,6 +46,7 @@ body {
   opacity: 0.5;
 }
 
+/* nav menu bottom border hover effect */
 .gradient-border {
   height: 3px;
   background: linear-gradient(
@@ -62,6 +66,7 @@ body {
   opacity: 1;
 }
 
+/* modal menu list dark bacground */
 .dark-bg {
   position: fixed;
   z-index: 25;
@@ -76,6 +81,7 @@ body {
   );
 }
 
+/* modal menu list */
 .hamburger-menu {
   position: fixed;
   z-index: 25;
@@ -110,6 +116,7 @@ body {
   z-index: 6;
 }
 
+/* hero section background img */
 .hero-bg {
   position: absolute;
   width: 80%;
