@@ -1,7 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "Public Sans", sans-serif;
+  color: hsl(233, 26%, 24%);
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
 .article:hover {
   cursor: pointer;
 }
@@ -10,4 +21,108 @@
 }
 .article-title {
   transition: color 0.15s ease-in-out;
+}
+
+.app-link:hover svg path {
+  fill: hsl(136, 65%, 51%);
+}
+
+.app-link svg path {
+  transition: fill 0.15s ease-in-out;
+}
+
+.request-invite {
+  background: linear-gradient(
+    90deg,
+    rgba(49, 211, 92, 1) 19%,
+    rgba(43, 183, 218, 1) 75%
+  );
+  transition: opacity 0.15s;
+}
+.request-invite:hover {
+  opacity: 0.5;
+}
+
+.gradient-border {
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    rgba(49, 211, 92, 1) 19%,
+    rgba(43, 183, 218, 1) 75%
+  );
+  width: 100%;
+  transition: opacity 0.15s ease-in;
+}
+
+.menu-item .gradient-border {
+  opacity: 0;
+}
+
+.menu-item:hover .gradient-border {
+  opacity: 1;
+}
+
+.dark-bg {
+  position: fixed;
+  z-index: 25;
+  top: 80px;
+  height: 320px;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(45, 49, 77, 1) 0%,
+    rgba(43, 183, 218, 0) 95%,
+    rgba(43, 183, 218, 0) 100%
+  );
+}
+
+.hamburger-menu {
+  position: fixed;
+  z-index: 25;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  width: 400px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 25px;
+}
+
+.hamburger-menu ul {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+.hamburger-menu ul li {
+  transition: all 0.15s ease-in-out;
+}
+.hamburger-menu ul li:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  color: rgba(49, 211, 92, 1);
+}
+
+.why-us-section {
+  z-index: 6;
+}
+
+.hero-bg {
+  position: absolute;
+  width: 80%;
+  object-fit: cover;
+  z-index: 5;
+  top: -6%;
+  right: -300px;
+}
+
+@media (max-width: 976px) {
+  .hero-bg {
+    top: 0;
+    width: 150%;
+    right: -20%;
+  }
 }

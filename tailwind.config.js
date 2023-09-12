@@ -18,6 +18,8 @@ module.exports = {
         lightGrayishBlue: "hsl(220, 16%, 96%)",
         veryLightGray: " hsl(0, 0%, 98%)",
         white: "hsl(0, 0%, 100%)",
+        bGradient:
+          "linear-gradient(90deg, rgba(49,211,92,1) 19%, rgba(43,183,218,1) 75%)",
       },
     },
   },
