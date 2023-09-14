@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/LukaszManiak/Frontend-Mentor-easybank-landing-page-master)
-<!-- - Live Site URL: [Netlify](https://bookmarklanding-lukas.netlify.app/) -->
+- Live Site URL: [Netlify](https://easy-bank-lukas.netlify.app/)
 
 ### Built with
 
