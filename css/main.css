@@ -693,10 +693,6 @@ video {
   align-self: baseline;
 }
 
-.overflow-hidden{
-  overflow: hidden;
-}
-
 .rounded-full{
   border-radius: 9999px;
 }
@@ -841,6 +837,8 @@ body {
   overflow-x: hidden;
 }
 
+/* Article hover effects */
+
 .article:hover {
   cursor: pointer;
 }
@@ -861,6 +859,8 @@ body {
   transition: fill 0.15s ease-in-out;
 }
 
+/* request button */
+
 .request-invite {
   background: linear-gradient(
     90deg,
@@ -873,6 +873,8 @@ body {
 .request-invite:hover {
   opacity: 0.5;
 }
+
+/* nav menu bottom border hover effect */
 
 .gradient-border {
   height: 3px;
@@ -893,6 +895,8 @@ body {
   opacity: 1;
 }
 
+/* modal menu list dark bacground */
+
 .dark-bg {
   position: fixed;
   z-index: 25;
@@ -907,13 +911,15 @@ body {
   );
 }
 
+/* modal menu list */
+
 .hamburger-menu {
   position: fixed;
   z-index: 25;
   top: 100px;
   left: 50%;
   transform: translate(-50%, 0);
-  width: 400px;
+  width: 50%;
   border-radius: 5px;
   background-color: white;
   padding: 25px;
@@ -942,37 +948,42 @@ body {
   z-index: 6;
 }
 
+/* hero section background img */
+
 .hero-bg {
   position: absolute;
-  width: 80%;
+  width: 85%;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 5;
-  top: -6%;
-  right: -300px;
+  top: -18vh;
+  right: -350px;
 }
 
 @media (max-width: 976px) {
   .hero-bg {
-    top: 0;
-    width: 150%;
-    right: -20%;
+    top: -10%;
+    width: 250%;
+    right: -25%;
   }
 }
 
-.hover\:text-black:hover{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.hover\:text-limeGreen:hover{
-  --tw-text-opacity: 1;
-  color: hsl(136 65% 51% / var(--tw-text-opacity));
+@media (max-width: 768px) {
+  .hero-bg {
+    top: 2%;
+    width: 250%;
+    right: -25%;
+  }
 }
 
 .hover\:text-darkBlue:hover{
   --tw-text-opacity: 1;
   color: hsl(233 26% 24% / var(--tw-text-opacity));
+}
+
+.hover\:text-limeGreen:hover{
+  --tw-text-opacity: 1;
+  color: hsl(136 65% 51% / var(--tw-text-opacity));
 }
 
 @media (min-width: 480px){

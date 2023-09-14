@@ -89,7 +89,7 @@ body {
   left: 50%;
   transform: translate(-50%, 0);
 
-  width: 400px;
+  width: 50%;
   border-radius: 5px;
   background-color: white;
   padding: 25px;
@@ -119,17 +119,25 @@ body {
 /* hero section background img */
 .hero-bg {
   position: absolute;
-  width: 80%;
+  width: 85%;
   object-fit: cover;
   z-index: 5;
-  top: -6%;
-  right: -300px;
+  top: -18vh;
+  right: -350px;
 }
 
 @media (max-width: 976px) {
   .hero-bg {
-    top: 0;
-    width: 150%;
-    right: -20%;
+    top: -10%;
+    width: 250%;
+    right: -25%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-bg {
+    top: 2%;
+    width: 250%;
+    right: -25%;
   }
 }
