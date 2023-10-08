@@ -940,7 +940,6 @@ body {
 
 .hamburger-menu ul li:hover {
   text-decoration: underline;
-  font-weight: bold;
   color: rgba(49, 211, 92, 1);
 }
 
